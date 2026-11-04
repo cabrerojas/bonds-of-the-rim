@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>BondsOfTheRim</AssemblyName>
+    <RootNamespace>BondsOfTheRim</RootNamespace>
+    <RimWorldManagedPath Condition="'$(RimWorldManagedPath)' == ''">C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed</RimWorldManagedPath>
+  </PropertyGroup>
+  <Target Name="ValidateRimWorldReferences" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(RimWorldManagedPath)\Assembly-CSharp.dll')" Text="Set RimWorldManagedPath to RimWorldWin64_Data\Managed for a RimWorld 1.6 installation." />
+  </Target>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(RimWorldManagedPath)\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(RimWorldManagedPath)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <Target Name="CopyModAssembly" AfterTargets="Build">
+    <MakeDir Directories="$(MSBuildProjectDirectory)\..\..\1.6\Assemblies" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(MSBuildProjectDirectory)\..\..\1.6\Assemblies" />
+  </Target>
+</Project>

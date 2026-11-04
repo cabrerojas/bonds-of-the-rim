@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>BondsOfTheRim_InviteRelatedVisitor</defName>
+    <driverClass>BondsOfTheRim.JobDriver_InviteRelatedVisitor</driverClass>
+    <reportString>speaking with TargetA.</reportString>
+    <casualInterruptible>true</casualInterruptible>
+  </JobDef>
+  <JobDef>
+    <defName>BondsOfTheRim_ListenToInvitation</defName>
+    <driverClass>BondsOfTheRim.JobDriver_ListenToInvitation</driverClass>
+    <reportString>listening to TargetA.</reportString>
+    <casualInterruptible>true</casualInterruptible>
+  </JobDef>
+</Defs>

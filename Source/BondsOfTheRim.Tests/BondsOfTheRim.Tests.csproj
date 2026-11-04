@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\BondsOfTheRim\InvitationPolicy.cs" Link="InvitationPolicy.cs" />
+    <Compile Include="..\BondsOfTheRim\RelationshipScenePolicy.cs" Link="RelationshipScenePolicy.cs" />
+    <Compile Include="..\BondsOfTheRim\InvitationCooldownPolicy.cs" Link="InvitationCooldownPolicy.cs" />
+  </ItemGroup>
+</Project>

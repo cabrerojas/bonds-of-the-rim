@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <BondsOfTheRim.Invite>Ask {0} to stay</BondsOfTheRim.Invite>
+  <BondsOfTheRim.InviteOnCooldown>{0} needs time before another invitation ({1} days).</BondsOfTheRim.InviteOnCooldown>
+  <BondsOfTheRim.Scene.RomanticStarted>{0} and {1} share a private conversation.</BondsOfTheRim.Scene.RomanticStarted>
+  <BondsOfTheRim.Scene.FamilyStarted>{0} and {1} reconnect as family.</BondsOfTheRim.Scene.FamilyStarted>
+  <BondsOfTheRim.Scene.FriendshipStarted>{0} and {1} catch up as old friends.</BondsOfTheRim.Scene.FriendshipStarted>
+  <BondsOfTheRim.InvitationAccepted>{0} has chosen to join the colony.</BondsOfTheRim.InvitationAccepted>
+  <BondsOfTheRim.InvitationDeclined>{0} declines the invitation for now.</BondsOfTheRim.InvitationDeclined>
+</LanguageData>
